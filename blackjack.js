@@ -176,8 +176,6 @@ let BJgame = {
     console.log("Outcome of the game:", winner);
 
     if (winner === You) {
-
-        alert("You win!")
         if (hasBlackjack(You)) {   
             betAmount *= 2.5;
         } else {
