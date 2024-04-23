@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    background-color: black; /* Set the page background to black */
+  }
+  
+  .title {
+    text-align: center;
+    background: rgb(232, 224, 117);
+    background: linear-gradient(0deg, rgba(232, 224, 117, 1) 0%, rgba(1, 1, 1, 1) 15%);
+    color: gold;
+    font-family: 'Lobster', cursive;
+    padding: 0.5rem;
+    font-size: 8rem;
+    word-spacing: 2rem;
+    letter-spacing: 0.3rem;
+  }
+  
+  .title h1 {
+    font-size: 8rem; /* Adjust the font size as needed */
+  }
+  
+  .blinking-text {
+    animation: blinker 2s step-start infinite;
+  }
+  
+  .balance {
+    position: absolute;
+    font-size: 3rem;
+    top: 10px; /* Adjust the distance from the top as needed */
+    right: 10px; /* Adjust the distance from the right as needed */
+  }
+  
+  @keyframes blinker {
+    25% {
+      opacity: 0;
+    }
+  }
+  
+  .main {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    border-bottom: black solid 0.1rem;
+    height: 50rem;
+  }
+  
+  .row1,
+  .row2 {
+    background: url('./cards/table.jpg') no-repeat center center/cover;
+    width: auto;
+    color: whitesmoke;
+  }
+  
+  .row1 div {
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .row1 h2 {
+    font-family: 'Monaco', cursive;
+    font-size: 4rem;
+    margin: 0; /* Remove default margin */
+  }
+  
+  #your-box {
+    border-right: black solid 1px;
+    margin-bottom: 0; /* Remove margin bottom */
+  }
+  
+  #your-box img,
+  #dealer-box img {
+    height: 20rem;
+    width: 13rem;
+    padding: 1rem;
+  }
+  
+  .row2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 55%;
+  }
+  
+  .buttons button {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: 1.5rem;
+  }
+  
+  .buttons button:hover {
+    cursor: pointer;
+    box-shadow: black 0px 0px 5px 2px;
+  }
+  
+  .row3 h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 4rem;
+  }
+  
+  .row3 {
+    margin: auto;
+  }
+  
+  table,
+  th,
+  td {
+    padding: 0.5rem;
+    border: solid 2px black;
+    font-size: 3rem;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  #black-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust height as needed */
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 50px; /* Vertically center text */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0; /* Remove margin top */
+  }
+  
+  table {
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+  
+  input[type='number'] {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Monaco', cursive;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: 1.5rem;
+  }
+  
+  @media screen and (max-width: 740px) {
+    html {
+      font-size: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    html {
+      font-size: 30%;
+    }
+  }
+  
